@@ -21,6 +21,8 @@ import popularRestauran6 from "../../assets/images/papaJhon.png"
 import logo from "../../assets/images/LOGO 1.png"
 import peopleImage from "../../assets/images/peopleImage.png"
 import logoGoogle from "../../assets/images/logoGoogle.png"
+import imagePartner from "../../assets/images/group8.png"
+import imageRider from "../../assets/images/group9.png"
 
 const Home = () => {
     return(
@@ -106,7 +108,7 @@ const Home = () => {
                     </div>
                     <div className="p-1 flex flex-col gap-2">
                         <span className="text-[#FC8A06] text-sm font-medium">Restaurant</span>
-                        <span className="text-[#03081F] text-lg font-bold">Butterbrot Caf’e London </span>
+                        <span className="text-[#03081F] text-lg font-bold">Butterbrot Caf’eLondon </span>
                     </div>
                 </div>
             </section>
@@ -219,6 +221,43 @@ const Home = () => {
                     <img src={peopleImage} alt="image-people" />
                 </div>
                
+            </section>
+            <section className="grid grid-cols-1 gap-3 p-2">
+                <div className="relative w-full">
+                    <img  src={imagePartner} alt="image-partner" className="object-cover w-full"/>
+                    <div className="absolute top-0 h-full pb-8 left-8 flex flex-col justify-between">
+                        <span className="bg-white p-1  text-sm font-bold rounded-b-md">Earn more with lower fees</span>
+                        <div className="flex flex-col gap-1">
+                            <p className="text-[#FC8A06] text-base font-medium">Signup as a business <br /> <span className="text-white font-bold text-[24px]">Partner with us</span></p>          
+                            <div className="flex mt-2">
+                                <button
+                                    className="text-white font-medium text-[11px] p-2 bg-backgroundOrange rounded-2xl"
+                                >
+                                    Get Started
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="relative w-full">
+                    <img  src={imageRider} alt="image-partner" className="object-cover w-full"/>
+                    <div className="absolute top-0 h-full pb-8 left-8 flex flex-col justify-between">
+                        <span className="bg-white p-1  text-sm font-bold rounded-b-md">Avail exclusive perks</span>
+                        <div className="flex flex-col gap-1">
+                            <p className="text-[#FC8A06] text-base font-medium">Signup as a rider<br /> <span className="text-white font-bold text-[24px]">Ride with us</span></p>          
+                            <div className="flex mt-2">
+                                <button
+                                    className="text-white font-medium text-[11px] p-2 bg-backgroundOrange rounded-2xl"
+                                >
+                                    Get Started
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="grid grid-cols-1 gap-3 p-2">
+                <h2 className="font-bold text-2xl">Know more about us!</h2>
             </section>
         </div>
         
