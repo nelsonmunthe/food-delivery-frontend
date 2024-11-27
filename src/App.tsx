@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         index: true
       }
     ]
-  }
+  },
 ])
 
 function App() {
