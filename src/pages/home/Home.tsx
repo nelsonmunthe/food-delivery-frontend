@@ -23,6 +23,9 @@ import peopleImage from "../../assets/images/peopleImage.png"
 import logoGoogle from "../../assets/images/logoGoogle.png"
 import imagePartner from "../../assets/images/group8.png"
 import imageRider from "../../assets/images/group9.png"
+import orderImage1 from "../../assets/images/order-food 2.png"
+import orderImage2 from "../../assets/images/food 3.png"
+import orderImage3 from "../../assets/images/order 4.png"
 
 const Home = () => {
     return(
@@ -291,8 +294,46 @@ const Home = () => {
                         <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 px-4 hover:rounded-3xl">Is Order.UK available in my area?</h2>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 gap-2">
+                <div className="grid grid-cols-1 gap-4 bg-[#03081F] content-center p-10 rounded-lg">
+                    <div className="bg-backgroundGray flex flex-col gap-2 justify-center items-center p-4 mx-4 rounded-lg">
+                        <h3 className="text-lg font-bold">Place an Order!</h3>
+                        <img src={orderImage1} alt="image-order"/>
+                        <p className="text-lg text-center">Place order through our website or Mobile app</p>
+                    </div>
+                    <div className="bg-backgroundGray flex flex-col gap-2 justify-center items-center p-4 mx-4 rounded-lg">
+                        <h3 className="text-lg font-bold">Track Progress</h3>
+                        <img src={orderImage2} alt="image-order"/>
+                        <p className="text-lg text-center">Your can track your order status with delivery time</p>
+                    </div>
+                    <div className="bg-backgroundGray flex flex-col gap-2 justify-center items-center p-4 mx-4 rounded-lg">
+                        <h3 className="text-lg font-bold">Get your Order!</h3>
+                        <img src={orderImage3} alt="image-order"/>
+                        <p className="text-lg text-center">Receive your order at a lighting fast speed!</p>
+                    </div>
+                    <p className="text-center text-base text-white">Order.UK simplifies the food ordering process. Browse through our diverse menu, select your favorite dishes, and proceed to checkout. Your delicious meal will be on its way to your doorstep in no time!</p>
 
+                </div>
+            </section>
+            <section className="grid grid-cols-1 gap-3 bg-backgroundOrange p-10 mx-2 rounded-lg content-center text-white">
+                <div className="flex flex-col justify-center ">
+                    <p className="font-light text-6xl text-center">546+</p>
+                    <span className="text-2xl text-center">Registered Riders</span>
+                    <div className="border-b border-[#D9D9D9] my-6 mx-10"></div>
+                </div>
+                <div className="flex flex-col justify-center ">
+                    <p className="font-light text-6xl text-center">789,900+</p>
+                    <span className="text-2xl text-center">Orders Delivered</span>
+                    <div className="border-b border-[#D9D9D9] my-6 mx-10"></div>
+                </div>
+                <div className="flex flex-col justify-center ">
+                    <p className="font-light text-6xl text-center">690+</p>
+                    <span className="text-2xl text-center">Restaurants Partnered</span>
+                    <div className="border-b border-[#D9D9D9] my-6 mx-10"></div>
+                </div>
+                <div className="flex flex-col justify-center ">
+                    <p className="font-light text-6xl text-center">17,457+</p>
+                    <span className="text-2xl text-center">Food items</span>
+                    <div className="border-b border-[#D9D9D9] my-6 mx-10"></div>
                 </div>
             </section>
         </div>
