@@ -256,8 +256,44 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="grid grid-cols-1 gap-3 p-2">
-                <h2 className="font-bold text-2xl">Know more about us!</h2>
+            <section className="grid grid-cols-1 gap-3 p-2 bg-backgroundGray">
+                <div className="grid grid-cols-1 gap-3">
+                    <h2 className="font-bold text-2xl text-center">Know more about us!</h2>
+                    <div className="grid  grid-cols-1 gap-2 content-center">
+                        <div className="flex justify-center items-center">
+                            <h2 className="text-base text-center hover:border hover:border-[#FC8A06] hover:py-2 hover:px-4 hover:rounded-3xl hover:font-bold hover:cursor-pointer">Frequent Questions</h2>
+                        </div>
+                        <div className="flex justify-center items-center">
+                            <h2 className="text-base text-center hover:border hover:border-[#FC8A06] hover:py-2 hover:px-4 hover:rounded-3xl hover:font-bold hover:cursor-pointer">Who we are?</h2>
+                        </div>
+                        <div className="flex justify-center items-center">
+                            <h2 className="text-base text-center hover:border hover:border-[#FC8A06] hover:py-2 hover:px-4 hover:rounded-3xl hover:font-bold hover:cursor-pointer">Partner Program</h2>
+                        </div>
+                        <div className="flex justify-center items-center">
+                            <h2 className="text-base text-center hover:border hover:border-[#FC8A06] hover:py-2 hover:px-4 hover:rounded-3xl hover:font-bold hover:cursor-pointer">Help & Support</h2>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid grid-cols-1 gap-2">
+                    <div className="flex justify-center items-center">
+                        <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 hover:px-4 hover:rounded-3xl">How does Order.UK work?</h2>
+                    </div>
+                    <div className="flex justify-center items-center">
+                        <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 px-4 hover:rounded-3xl">What payment methods are accepted?</h2>
+                    </div>
+                    <div className="flex justify-center items-center">
+                        <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 px-4 hover:rounded-3xl">Can I track my order in real-time?</h2>
+                    </div>
+                    <div className="flex justify-center items-center">
+                        <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 px-4 hover:rounded-3xl">Are there any special discounts orpromotions available?</h2>
+                    </div>
+                    <div className="flex justify-center items-center">
+                        <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 px-4 hover:rounded-3xl">Is Order.UK available in my area?</h2>
+                    </div>
+                </div>
+                <div className="grid grid-cols-1 gap-2">
+
+                </div>
             </section>
         </div>
         
