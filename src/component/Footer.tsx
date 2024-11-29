@@ -9,18 +9,18 @@ import { PiSnapchatLogo } from "react-icons/pi";
 
 const Footer = () => {
     return(
-        <footer className="grid grid-cols-">
-            <div className="grid grid-cols-1 bg-backgroundGray gap-8 p-10">
+        <footer className="grid grid-cols-1">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-10 bg-backgroundGray lg:px-20">
                 <div className="flex flex-col gap-4">
                         <img  src={logo2} alt="logo" className="object-contain h-10"/>
                         <div className="flex gap-1 justify-center items-center w-full">
-                        <img  src={appStore} alt="logo" className="object-contain h-8"/>
-                        <img  src={googleStore} alt="logo" className="object-contain h-8"/>
+                            <img  src={appStore} alt="logo" className="object-fill w-full"/>
+                            <img  src={googleStore} alt="logo" className="object-fill w-full"/>
                         </div>
-                        <p className="text-center text-sm">Company # 490039-445, Registered withHouse of companies.</p>
+                        <p className="text-center sm:text-start text-sm">Company # 490039-445, Registered withHouse of companies.</p>
                 </div>
                 <div className="flex flex-col gap-4">
-                    <span className="text-lg font-bold text-center">Get Exclusive Deals in your Inbox</span>
+                    <span className="text-lg font-bold text-center sm:text-start">Get Exclusive Deals in your Inbox</span>
                     <div className="flex flex-col gap-4">
                         <div className="relative flex  justify-center items-center w-full">
                             <input 

@@ -29,7 +29,7 @@ import orderImage3 from "../../assets/images/order 4.png"
 
 const Home = () => {
     return(
-        <div className="grid grid-cols-1">
+        <div className="grid grid-cols-1 lg:mx-20">
             <section className="flex flex-col gap-2">
                 <div className="flex justify-between">
                     <div className="bg-backgroundOrange py-2 w-full flex gap-1 items-center justify-center">
@@ -77,7 +77,7 @@ const Home = () => {
                     <label htmlFor="drop-down" className="text-sm text-[#03081F]">Pizza & Fast Food</label>
                 </div>
             </section>
-            <section className="grid grid-cols-2 gap-2 p-2">
+            <section className="grid grid-cols-2 gap-2 p-2 sm:grid-cols-3">
                 <div className="flex flex-col gap-2">
                     <div className="relative flex justify-center items-center">
                         <img src={image1} alt="image-1" />
@@ -115,9 +115,9 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-backgroundGray p-2 grid grid-cols-1 gap-2">
+            <section className="bg-backgroundGray p-2 grid grid-cols-1 gap-2 ">
                 <h2 className="text-lg font-bold my-3">Order.Uk’s Popular Categories</h2>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
                     <div className= "flex flex-col">
                         <img src={imagePopular1} alt="image-popular"/>
                         <div className="border border-[#EFEFEF] flex flex-col p-2 rounded-b-2xl">
@@ -164,7 +164,7 @@ const Home = () => {
             </section>
             <section className="grid grid-cols-1 gap-3 p-2">
                 <h2 className="text-lg font-bold my-3">Popular Restaurants</h2>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
                     <div className="flex flex-col">
                         <img src={popularRestauran1} alt="popular-restaturan"/>
                         <div className="bg-backgroundOrange p-2 rounded-b-lg flex justify-center items-center">
@@ -203,7 +203,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-backgroundGray grid grid-cols-1 gap-3">
+            <section className="bg-backgroundGray grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="flex flex-col mt-6 gap-1">
                     <div className="flex gap-1 justify-center items-center">
                         <img src={logo} alt="logo" className="h-6"/>
@@ -220,12 +220,12 @@ const Home = () => {
                         <img  src={logoGoogle} alt="logo-google"/>
                     </div>
                 </div>
-                <div className="flex justify-center items-center mx-10">
-                    <img src={peopleImage} alt="image-people" />
+                <div className="flex justify-center items-center mx-10 sm:order-first">
+                    <img src={peopleImage} alt="image-people" className="h-full" />
                 </div>
                
             </section>
-            <section className="grid grid-cols-1 gap-3 p-2">
+            <section className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-2">
                 <div className="relative w-full">
                     <img  src={imagePartner} alt="image-partner" className="object-cover w-full"/>
                     <div className="absolute top-0 h-full pb-8 left-8 flex flex-col justify-between">
@@ -259,81 +259,91 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="grid grid-cols-1 gap-3 p-2 bg-backgroundGray">
-                <div className="grid grid-cols-1 gap-3">
-                    <h2 className="font-bold text-2xl text-center">Know more about us!</h2>
-                    <div className="grid  grid-cols-1 gap-2 content-center">
+            <section className="grid grid-cols-12 gap-3 p-2 bg-backgroundGray sm:p-10 rounded-lg">
+                <div className="col-span-12 grid grid-cols-12 gap-3 md:my-10">
+                    <h2 className="col-span-12  md:col-span-4  text-2xl text-center md:text-start font-bold">Know more about us!</h2>
+                    <div className="col-span-12 md:col-span-8 gap-2 flex flex-col  justify-evenly md:flex-row">
                         <div className="flex justify-center items-center">
-                            <h2 className="text-base text-center hover:border hover:border-[#FC8A06] hover:py-2 hover:px-4 hover:rounded-3xl hover:font-bold hover:cursor-pointer">Frequent Questions</h2>
+                            <h2 className="text-base text-center hover:border hover:border-b-[#FC8A06] hover:font-bold hover:cursor-pointer">Frequent Questions</h2>
                         </div>
                         <div className="flex justify-center items-center">
-                            <h2 className="text-base text-center hover:border hover:border-[#FC8A06] hover:py-2 hover:px-4 hover:rounded-3xl hover:font-bold hover:cursor-pointer">Who we are?</h2>
+                            <h2 className="text-base text-center hover:border hover:border-b-[#FC8A06] hover:font-bold hover:cursor-pointer">Who we are?</h2>
                         </div>
                         <div className="flex justify-center items-center">
-                            <h2 className="text-base text-center hover:border hover:border-[#FC8A06] hover:py-2 hover:px-4 hover:rounded-3xl hover:font-bold hover:cursor-pointer">Partner Program</h2>
+                            <h2 className="text-base text-center hover:border hover:border-b-[#FC8A06] hover:font-bold hover:cursor-pointer">Partner Program</h2>
                         </div>
                         <div className="flex justify-center items-center">
-                            <h2 className="text-base text-center hover:border hover:border-[#FC8A06] hover:py-2 hover:px-4 hover:rounded-3xl hover:font-bold hover:cursor-pointer">Help & Support</h2>
+                            <h2 className="text-base text-center hover:border hover:border-b-[#FC8A06] hover:font-bold hover:cursor-pointer">Help & Support</h2>
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 gap-2">
-                    <div className="flex justify-center items-center">
-                        <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 hover:px-4 hover:rounded-3xl">How does Order.UK work?</h2>
+                <div className="grid col-span-12 grid-cols-12 p-10 bg-white rounded-lg">
+                    <div className="col-span-12 lg:col-span-4 grid grid-cols-1 gap-2 md:bg-white">
+                        <div className="flex justify-center items-center">
+                            <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 hover:px-4 hover:rounded-3xl">How does Order.UK work?</h2>
+                        </div>
+                        <div className="flex justify-center items-center">
+                            <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 px-4 hover:rounded-3xl">What payment methods are accepted?</h2>
+                        </div>
+                        <div className="flex justify-center items-center">
+                            <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 px-4 hover:rounded-3xl">Can I track my order in real-time?</h2>
+                        </div>
+                        <div className="flex justify-center items-center">
+                            <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 px-4 hover:rounded-3xl">Are there any special discounts orpromotions available?</h2>
+                        </div>
+                        <div className="flex justify-center items-center">
+                            <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 px-4 hover:rounded-3xl">Is Order.UK available in my area?</h2>
+                        </div>
                     </div>
-                    <div className="flex justify-center items-center">
-                        <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 px-4 hover:rounded-3xl">What payment methods are accepted?</h2>
-                    </div>
-                    <div className="flex justify-center items-center">
-                        <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 px-4 hover:rounded-3xl">Can I track my order in real-time?</h2>
-                    </div>
-                    <div className="flex justify-center items-center">
-                        <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 px-4 hover:rounded-3xl">Are there any special discounts orpromotions available?</h2>
-                    </div>
-                    <div className="flex justify-center items-center">
-                        <h2 className="text-lg font-bold text-center hover:bg-[#FC8A06] hover:cursor-pointer hover:py-2 px-4 hover:rounded-3xl">Is Order.UK available in my area?</h2>
-                    </div>
-                </div>
-                <div className="grid grid-cols-1 gap-4 bg-[#03081F] content-center p-10 rounded-lg">
-                    <div className="bg-backgroundGray flex flex-col gap-2 justify-center items-center p-4 mx-4 rounded-lg">
-                        <h3 className="text-lg font-bold">Place an Order!</h3>
-                        <img src={orderImage1} alt="image-order"/>
-                        <p className="text-lg text-center">Place order through our website or Mobile app</p>
-                    </div>
-                    <div className="bg-backgroundGray flex flex-col gap-2 justify-center items-center p-4 mx-4 rounded-lg">
-                        <h3 className="text-lg font-bold">Track Progress</h3>
-                        <img src={orderImage2} alt="image-order"/>
-                        <p className="text-lg text-center">Your can track your order status with delivery time</p>
-                    </div>
-                    <div className="bg-backgroundGray flex flex-col gap-2 justify-center items-center p-4 mx-4 rounded-lg">
-                        <h3 className="text-lg font-bold">Get your Order!</h3>
-                        <img src={orderImage3} alt="image-order"/>
-                        <p className="text-lg text-center">Receive your order at a lighting fast speed!</p>
-                    </div>
-                    <p className="text-center text-base text-white">Order.UK simplifies the food ordering process. Browse through our diverse menu, select your favorite dishes, and proceed to checkout. Your delicious meal will be on its way to your doorstep in no time!</p>
+                    <div className="col-span-12  lg:col-span-8  grid grid-cols-12 gap-4 bg-[#03081F] md:bg-white content-center rounded-lg p-2">
+                        <div className="bg-backgroundGray col-span-12 md:col-span-4 flex flex-col gap-2 justify-center items-center p-4 mx-4 rounded-lg">
+                            <h3 className="text-lg font-bold">Place an Order!</h3>
+                            <img src={orderImage1} alt="image-order"/>
+                            <p className="text-lg text-center">Place order through ourwebsite or Mobile app</p>
+                        </div>
+                        <div className="bg-backgroundGray col-span-12 md:col-span-4 flex flex-col gap-2 justify-center items-center p-4 mx-4 rounded-lg">
+                            <h3 className="text-lg font-bold">Track Progress</h3>
+                            <img src={orderImage2} alt="image-order"/>
+                            <p className="text-lg text-center">Your can track your orderstatus with delivery time</p>
+                        </div>
+                        <div className="bg-backgroundGray col-span-12 md:col-span-4 flex flex-col gap-2 justify-center items-center p-4 mx-4 rounded-lg">
+                            <h3 className="text-lg font-bold">Get your Order!</h3>
+                            <img src={orderImage3} alt="image-order"/>
+                            <p className="text-lg text-center">Receive your order at alighting fast speed!</p>
+                        </div>
+                        <p className="text-center text-base text-white md:text-[#03081F] col-span-12">Order.UK simplifies the food ordering process. Browse through our diverse menu, select your favorite dishes, and proceed to checkout. Your delicious meal will be on its way to your doorstep in no time!</p>
 
+                    </div>
                 </div>
             </section>
-            <section className="grid grid-cols-1 gap-3 bg-backgroundOrange p-10 mx-2 rounded-lg content-center text-white">
-                <div className="flex flex-col justify-center ">
-                    <p className="font-light text-6xl text-center">546+</p>
-                    <span className="text-2xl text-center">Registered Riders</span>
-                    <div className="border-b border-[#D9D9D9] my-6 mx-10"></div>
+            <section className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-4 bg-backgroundOrange p-10 mx-2 rounded-lg content-center text-white">
+                <div className="flex flex-col justify-between md:flex-row">
+                    <div className="flex flex-col justify-between items-center flex-1">
+                        <p className="font-light text-6xl sm:text-4xl text-center">546+</p>
+                        <span className="text-2xl text-center">Registered Riders</span>
+                    </div>
+                    <div className="border-b md:border-b-0 md:border-r border-[#D9D9D9] my-6 mx-10 md:m-0"></div>
                 </div>
-                <div className="flex flex-col justify-center ">
-                    <p className="font-light text-6xl text-center">789,900+</p>
-                    <span className="text-2xl text-center">Orders Delivered</span>
-                    <div className="border-b border-[#D9D9D9] my-6 mx-10"></div>
+                <div className="flex flex-col justify-between md:flex-row">
+                    <div className="flex flex-col justify-between items-center flex-1">
+                        <p className="font-light text-6xl sm:text-4xl text-center">690+</p>
+                        <span className="text-2xl text-center">Restaurants Partnered</span>
+                    </div>
+                    <div className="border-b md:border-b-0 md:border-r border-[#D9D9D9] my-6 mx-10 md:m-0"></div>
                 </div>
-                <div className="flex flex-col justify-center ">
-                    <p className="font-light text-6xl text-center">690+</p>
-                    <span className="text-2xl text-center">Restaurants Partnered</span>
-                    <div className="border-b border-[#D9D9D9] my-6 mx-10"></div>
+                <div className="flex flex-col justify-between md:flex-row">
+                    <div className="flex flex-col justify-between items-center flex-1">
+                        <p className="font-light text-6xl sm:text-4xl text-center">17,457+</p>
+                        <span className="text-2xl text-center">Food items</span>
+                    </div>
+                    <div className="border-b md:border-b-0 md:border-r border-[#D9D9D9] my-6 mx-10 md:m-0"></div>
                 </div>
-                <div className="flex flex-col justify-center ">
-                    <p className="font-light text-6xl text-center">17,457+</p>
-                    <span className="text-2xl text-center">Food items</span>
-                    <div className="border-b border-[#D9D9D9] my-6 mx-10"></div>
+                <div className="flex flex-col justify-between md:flex-row">
+                    <div className="flex flex-col justify-between items-center flex-1">
+                        <p className="font-light text-6xl sm:text-4xl text-center">546+</p>
+                        <span className="text-2xl text-center">Registered Riders</span>
+                    </div>
+                    <div className="border-b md:border-b-0 md:border-0 my-6 mx-10 md:m-0"></div>
                 </div>
             </section>
         </div>
