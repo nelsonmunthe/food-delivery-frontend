@@ -26,7 +26,8 @@ import imageRider from "../../assets/images/group9.png"
 import orderImage1 from "../../assets/images/order-food 2.png"
 import orderImage2 from "../../assets/images/food 3.png"
 import orderImage3 from "../../assets/images/order 4.png"
-
+import pictureEat1 from "../../assets/images/picute-eat1.png"
+import pictureEat2 from "../../assets/images/picture-eat2.png"
 const Home = () => {
     return(
         <div className="grid grid-cols-1 lg:mx-20">
@@ -49,7 +50,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="px-2 py-6 bg-backgroundGray gap-2 m-2 rounded-lg flex flex-col justify-center">
+            <section className="sm:hidden px-2 py-6 bg-backgroundGray gap-2 m-2 rounded-lg flex flex-col justify-center">
                 <span className="text-[#03081F] text-center text-sm">Order Restaurant food, takeaway and groceries.</span>
                 <div className="flex flex-col">
                     <h1 className="text-[#03081F] text-center font-semibold text-3xl"> 
@@ -69,6 +70,61 @@ const Home = () => {
                         <IoIosArrowDroprightCircle  className=""/>
                     </div>
                 </div>
+            </section>
+            <section className="hidden bg-[#FBFBFB] gap-2 rounded-lg sm:grid grid-cols-12 pt-8 relative rounded-br-xl md:h-[250px] lg:h-[400px]">
+               <div className="flex flex-col justify-center col-span-5">
+                    <span className="text-[#03081F] text-center text-sm">Order Restaurant food, takeaway and groceries.</span>
+                    <div className="flex flex-col">
+                        <h1 className="text-[#03081F] text-center font-semibold text-3xl"> 
+                            Feast Your Senses, <br /> <span className="text-center font-semibold text-3xl text-[#FC8A06]">Fast and Fresh</span>
+                        </h1>
+                        
+                    </div>
+                    <span className="text-[#03081F] text-center text-sm">Enter a postcode to see what we deliver</span>
+                    <div className="relative flex justify-center items-center mx-auto">
+                        <input 
+                            type="text"
+                            name="feedback"
+                            placeholder="e.g. EC4R 3TE"
+                            className="text-sm py-1 px-3 rounded-2xl w-ful border border-gray-200"
+                        />
+                        <div className="absolute -bottom-[0.5] -right-1 bg-backgroundOrange rounded-3xl p-2">
+                            <IoIosArrowDroprightCircle  className=""/>
+                        </div>
+                    </div>`
+               </div>
+               <div className="flex flex-col col-span-2">    
+               </div>
+               <div className="col-span-5 bg-backgroundOrange rounded-br-xl grid grid-flow-row-dense grid-cols-12 grid-rows-3 relative rounded-tl-[300px]">
+                    <div className="top-[10%] left-[30%] absolute flex flex-col bg-[#FBFBFB] p-2 col-span-2 rounded-lg z-50">
+                        <div className="flex justify-between">
+                            <img src={logo} alt="logo"  className="h-2 lg:h-3"/>
+                            <span className="text-[10px] lg:pl-40">now</span>
+                        </div>
+                        <span className="font-bold text-[8px] lg:text-[10px]">We've Received your order</span>
+                        <span className="text-[8px] lg:text-[10px]">Awaiting Restaturant acceptance</span>
+                    </div>
+                    <div className="top-[40%] left-[40%] absolute flex flex-col bg-[#FBFBFB] p-2 col-span-2 rounded-lg z-50">
+                        <div className="flex justify-between">
+                            <img src={logo} alt="logo"  className="h-2 lg:h-3"/>
+                            <span className="text-[10px] lg:pl-40">now</span>
+                        </div>
+                        <span className="font-bold text-[8px] lg:text-[10px]">We've Received your order</span>
+                        <span className="text-[8px] lg:text-[10px]">Awaiting Restaturant acceptance</span>
+                    </div>
+                    <div className="top-[70%] left-[30%] absolute flex flex-col bg-[#FBFBFB] p-2 col-span-2 rounded-lg z-50">
+                        <div className="flex justify-between">
+                            <img src={logo} alt="logo"  className="h-2 lg:h-3"/>
+                            <span className="text-[10px] lg:pl-40">now</span>
+                        </div>
+                        <span className="font-bold text-[8px] lg:text-[10px]">We've Received your order</span>
+                        <span className="text-[8px] lg:text-[10px]">Awaiting Restaturant acceptance</span>
+                    </div>
+                    
+               </div>
+               
+                <img src={pictureEat1}  className="absolute object-fit bottom-0 left-[30%] z-50 h-[180px] lg:h-[340px] "/>
+                <img src={pictureEat2}  className="absolute object-fit bottom-0 left-[55%] z-40 h-[150px] lg:h-[300px]"/>
             </section>
             <section className="px-2 flex justify-between items-center gap-1">
                 <span className="text-sm font-bold">Up to -40% Discount Offers 🎊 </span>
