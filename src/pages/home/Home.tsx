@@ -28,7 +28,9 @@ import orderImage2 from "../../assets/images/food 3.png"
 import orderImage3 from "../../assets/images/order 4.png"
 import pictureEat1 from "../../assets/images/picute-eat1.png"
 import pictureEat2 from "../../assets/images/picture-eat2.png"
+
 const Home = () => {
+
     return(
         <div className="grid grid-cols-1 lg:mx-20">
             <section className="flex flex-col gap-2">
