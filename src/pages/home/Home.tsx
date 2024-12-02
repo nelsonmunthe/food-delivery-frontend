@@ -33,7 +33,7 @@ const Home = () => {
 
     return(
         <div className="grid grid-cols-1 lg:mx-20">
-            <section className="flex flex-col gap-2">
+            <section className="sm:hidden flex flex-col gap-2">
                 <div className="flex justify-between">
                     <div className="bg-backgroundOrange py-2 w-full flex gap-1 items-center justify-center">
                         <img src={userImage} alt="user-image" className="h-8"/>

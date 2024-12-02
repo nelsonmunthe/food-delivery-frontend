@@ -6,7 +6,10 @@ import CustomNavLink from "./CustomNavLink"
 import { MdClose } from "react-icons/md";
 import { MdMenu } from "react-icons/md";
 import { IoPersonSharp } from "react-icons/io5";
-
+import { GiCampfire } from "react-icons/gi";
+import { MdLocationPin } from "react-icons/md";
+import { TbBasketCheck } from "react-icons/tb";
+import { FaRegArrowAltCircleDown } from "react-icons/fa";
 
 const Navigation = () => {
     const [menu, setMenu] = useState<boolean>(false);
@@ -41,6 +44,24 @@ const Navigation = () => {
     return(
         <nav className="fixed top-0 left-0 w-full z-99 bg-white">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div className="hidden sm:grid grid-cols-12 gap-2">
+                    <div className="col-span-5 flex gap-2 justify-center items-center">
+                        <GiCampfire className="text-red-500 text-3xl"/>
+                        <p className="text-sm"> Get 5% Off your first order, <span className="text-[#FC8A06] font-bold">Promo: ORDER5</span></p>
+                    </div>
+                    <div className="col-span-7 flex gap-2 items-center justify-between">
+                        <div className="flex gap-2 justify-center items-center">
+                            <MdLocationPin />
+                            <p className="text-sm font-medium">Regent Street, A4, A4201, London <span className="text-[#FC8A06] font-semibold">Change Location</span></p>
+                        </div>
+                        <div className="bg-[#028643] p-2 rounded-b-lg flex gap-2 text-white text-sm justify-center items-center">
+                            <TbBasketCheck className=""/>
+                            <span>23 Items</span>
+                            <span>GBP 79.89</span>
+                            <FaRegArrowAltCircleDown />
+                        </div>
+                    </div>
+                </div>
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <img className="h-4 w-auto"  src={logo} alt="company logo"/>
@@ -56,7 +77,7 @@ const Navigation = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center py-1 px-3 bg-[#03081F] rounded-3xl gap-1 p-1">
+                    <div className="hidden sm:ml-6 sm:flex justify-center items-center py-1 px-3 bg-[#03081F] rounded-3xl gap-1 p-1">
                         <IoPersonSharp className="bg-backgroundOrange rounded-lg"/>
                         <button className="text-white text-[10px] text-center">
                             Login/Signup
