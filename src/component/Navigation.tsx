@@ -5,6 +5,8 @@ import { CustomNavLinkProps } from "../interface/common"
 import CustomNavLink from "./CustomNavLink"
 import { MdClose } from "react-icons/md";
 import { MdMenu } from "react-icons/md";
+import { IoPersonSharp } from "react-icons/io5";
+
 
 const Navigation = () => {
     const [menu, setMenu] = useState<boolean>(false);
@@ -19,25 +21,25 @@ const Navigation = () => {
             path: "/"
         },
         {
-            description: "Landloards",
-            path: "/Landloards"
+            description: " Browse Menu ",
+            path: "/menu"
         },
         {
-            description: "Blog",
-            path: "/blog"
+            description: "Special Offers",
+            path: "/special-offers"
         },
         {
-            description: "Booking",
-            path: "/booking"
+            description: "Restaturant",
+            path: "/restaturant"
         },
         {
-            description: "Contact",
-            path: "/contact"
+            description: "Track Order",
+            path: "/track-order"
         }
     ]
 
     return(
-        <nav className="fixed top-0 left-0 w-full z-50 bg-white">
+        <nav className="fixed top-0 left-0 w-full z-99 bg-white">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -53,6 +55,12 @@ const Navigation = () => {
                             }
                             </div>
                         </div>
+                    </div>
+                    <div className="flex justify-center items-center py-1 px-3 bg-[#03081F] rounded-3xl gap-1 p-1">
+                        <IoPersonSharp className="bg-backgroundOrange rounded-lg"/>
+                        <button className="text-white text-[10px] text-center">
+                            Login/Signup
+                        </button>
                     </div>
                     <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                         {/* <!-- Mobile menu button--> */}
