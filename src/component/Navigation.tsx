@@ -42,7 +42,7 @@ const Navigation = () => {
     ]
 
     return(
-        <nav className="fixed top-0 left-0 w-full z-99 bg-white">
+        <nav className="fixed top-0 left-0 w-full z-999 bg-white">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="hidden sm:grid grid-cols-12 gap-2">
                     <div className="col-span-5 flex gap-2 justify-center items-center">
@@ -54,11 +54,19 @@ const Navigation = () => {
                             <MdLocationPin />
                             <p className="text-sm font-medium">Regent Street, A4, A4201, London <span className="text-[#FC8A06] font-semibold">Change Location</span></p>
                         </div>
-                        <div className="bg-[#028643] p-2 rounded-b-lg flex gap-2 text-white text-sm justify-center items-center">
-                            <TbBasketCheck className=""/>
-                            <span>23 Items</span>
-                            <span>GBP 79.89</span>
-                            <FaRegArrowAltCircleDown />
+                        <div className="bg-[#028643] rounded-b-lg flex gap-2 text-white text-sm justify-center items-center">
+                            <div className="flex justify-center items-center border-r border-r-white px-2 h-8">
+                                <TbBasketCheck className="text-xl"/>
+                            </div>
+                            <div className="flex justify-center items-center border-r border-r-white px-2 h-8">
+                                <span className="text-sm">23 Items</span>
+                            </div>
+                            <div className="flex justify-center items-center border-r border-r-white px-2 h-8">
+                                <span className="text-sm">GBP 79.89</span>
+                            </div>
+                            <div className="flex justify-center items-center border-r border-r-white px-2 h-8">
+                                <FaRegArrowAltCircleDown className="text-xl"/>
+                            </div>
                         </div>
                     </div>
                 </div>
